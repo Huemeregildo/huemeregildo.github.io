@@ -1,0 +1,64 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+    border: 3px dashed black;
+    
+}
+/*header*/
+header{
+    
+    background-image: url(../imagenes/ellaYyo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*background: linear-gradient(to right, hsla(212, 82%, 64%, 0.459), hsla(202, 80%, 72%, 0.664)), url(../imagenes/ellaYyo.jpg);*/
+    /*background-size: cover;*/
+    background-attachment: fixed;
+    /*position: relative;*/
+    /*color: hwb(219 39% 7%);*/
+}
+
+header .titulo{
+    display: flex;
+    height: 830px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.titulo h1{
+    font-size: 100px;
+    color: WHITE;
+}
+
+.titulo h2{
+    font-size: 60px;
+   
+    color: white;
+    font-weight:200;
+}
+
+/*nav*/
+nav{
+    text-align: right;
+    padding: 1px 1px 0 0;
+    font-weight: 200;
+    font-size: 20px;
+}
+nav li{
+    color: #0972c6;
+    padding: 10px 10px;
+    
+    list-style: none;
+    display: inline-block;
+    background-color: white;
+    
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+nav a:hover{
+    text-decoration: underline;
+}
