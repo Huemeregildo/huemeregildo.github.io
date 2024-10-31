@@ -1,8 +1,7 @@
 body{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     border: 3px dashed black;
-    
 }
 /*header*/
 header{
@@ -61,4 +60,30 @@ nav a{
 }
 nav a:hover{
     text-decoration: underline;
+}
+
+/*texto*/
+
+h3{
+    border-top: 25px solid #0972c6;
+    padding-top: 15px;
+    margin: 0;
+    font-size: 1.7em;
+}
+h3:target{
+    color: #0972c6;
+    text-decoration: underline 5px #0972c6;
+}
+p{
+    text-align: justify;
+    
+}
+article {
+    padding: 30px;
+}
+.inefable{
+    color: #0972c6;
+}
+.centrar{
+    text-align: center;
 }
