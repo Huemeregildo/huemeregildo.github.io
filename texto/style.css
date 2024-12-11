@@ -1,18 +1,21 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    border: 3px dashed black;
+    font-family: "Indie Flower", cursive;
 }
 /*header*/
 header{
     
-    background-image: url(../imagenes/ellaYyo.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    /*background: linear-gradient(to right, hsla(212, 82%, 64%, 0.459), hsla(202, 80%, 72%, 0.664)), url(../imagenes/ellaYyo.jpg);*/
-    /*background-size: cover;*/
+    /*background-image: url(../imagenes/ellaYyo.jpg);*/
+    /*background-repeat: no-repeat;*/
+    background-size: 100% 600px;
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.559), hsla(0, 0%, 9%, 0.664)), url(../imagenes/ellaYyo.jpg);
+    background-size: cover;
     background-attachment: fixed;
-    /*position: relative;*/
+    position: relative;
     /*color: hwb(219 39% 7%);*/
 }
 
@@ -24,6 +27,7 @@ header .titulo{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    font-family: "Indie Flower", cursive;
 }
 .titulo h1{
     font-size: 100px;
@@ -39,19 +43,13 @@ header .titulo{
 
 /*nav*/
 nav{
-    text-align: right;
-    padding: 1px 1px 0 0;
-    font-weight: 200;
-    font-size: 20px;
-}
-nav li{
-    color: #0972c6;
-    padding: 10px 10px;
-    
-    list-style: none;
-    display: inline-block;
+    display: flex;
     background-color: white;
+    align-items: center;
     
+    font-weight: 100;
+    /*position: sticky;
+    top: 0;*/
 }
 nav a{
     text-decoration: none;
@@ -59,20 +57,45 @@ nav a{
     
 }
 nav a:hover{
-    text-decoration: underline;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #0078D7;
+    
+}
+
+header img{
+    display: inline-block;
+    /*width: 8%;*/
+    width: 180px;
+    height: auto;
+}
+
+ol{
+    text-align: right;
+    display: inline-block;
+    
+    width: 100%;
+}
+
+nav ol li{
+    display: inline-block;
+    text-align: center;
+    padding: 0 25px 0 25px;
+    color:#0078D7;
+    font-size: 1.3em;
+    font-weight: bolder;
 }
 
 /*texto*/
 
 h3{
-    border-top: 25px solid #0972c6;
+    border-top: 25px solid #0078D7;
     padding-top: 15px;
     margin: 0;
     font-size: 1.7em;
 }
 h3:target{
-    color: #0972c6;
-    text-decoration: underline 5px #0972c6;
+    color: #0078D7;
+    text-decoration: underline 5px #0078D7;
 }
 p{
     text-align: justify;
@@ -86,4 +109,42 @@ article {
 }
 .centrar{
     text-align: center;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+
+
+/*footer*/
+footer{
+    background-color: #0078D7;
+    text-align: center;
+    color: white;
+    padding: 1px;
+}
+footer a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+footer span{
+    font-size: 2em;
+    vertical-align: middle;
+    
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+h5{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: 1;
+    margin: 15px 0 15px 0;
 }
